@@ -1,0 +1,71 @@
+#container-imagem {
+    /* position: relative; */
+    height: 100vh;
+    width: 100vw;
+    /* adicionando imagem de fundo */
+    background: url('./img/resiliafliximgfundo.jpg');
+    background-size: cover;
+}
+
+.menuImagem {
+    display: flex;
+    justify-content: center;        
+    opacity: 0.5;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    padding: 10px 50px;
+    border-radius: 10px;   
+    width: 30%;
+    height: 30%;
+    
+}
+
+
+#btnImagem{
+    border-top-width: 0px ;
+    margin-top: 25px;
+    background-color: #4D194D;
+    color: cornsilk;
+}
+
+#btnImagem:hover {    
+    transform: scale(1.2) ;
+}
+
+#btnImagem:active{
+    background:transparent;
+    /* border:none; */
+    /* outline:none; */
+}
+
+
+
+#btnImagem {
+    border: 2px solid transparent;
+    border-radius: 100px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    padding: .55em 1.5em .5em;
+    text-transform: uppercase;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+#btnImagem {
+    display: inline-block;
+    font-weight: 400;
+    /* color: cornsilk; */
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 10px;
+    
+}
+
+#tituloImagemFundo, #subtituloImagemFundo {
+    color: #ffffff;
+}
+
