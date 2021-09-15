@@ -1,7 +1,16 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 10%;
+}
+
+
 #container-imagem {
-    /* position: relative; */
-    height: 100vh;
-    width: 100vw;
+    height: 80%;
+    width: 100%;
     /* adicionando imagem de fundo */
     background: url('./img/resiliafliximgfundo.jpg');
     background-size: cover;
