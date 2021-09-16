@@ -10,50 +10,61 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css
     " />
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/index.css">
 
     <title>Resiliaflix</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006466;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/resiliaflix2_logo.png" alt="" width="250" height="84">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cadastre-se</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Pesquisar filme"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"
-                                style="color:#fff;border-color:#fff">Pesquisar</button>
-                        </form>
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0d1b2a">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/resiliaflix2_logo.png" alt="" width="250" height="84">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/cadastro.html">Cadastre-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/buscar.html">Buscar filme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/contato.html">Contato</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="container-imagem">
+
+        <div class="menuImagem">
+            <div class="">
+                <h1 id="tituloImagemFundo">Faça aqui seu cadastro!</h1>
+                <h4 id="subtituloImagemFundo">Experimente todo conteúdo exclusivo do ResiliaFlix!</h4>
+                <button id="btnImagem">EXPERIMENTE GRÁTIS</button>
+            </div>
+        </div>
     </div>
-
-    <main></main>
-
+    
     <div class="main-content">
         <section>
             <div class="container">
@@ -229,6 +240,7 @@
     </div>
 
     <footer></footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
