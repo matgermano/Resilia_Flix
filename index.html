@@ -5,54 +5,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css
+    " />
     <link rel="stylesheet" href="./css/index.css">
 
     <title>Resiliaflix</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006466;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/resiliaflix2_logo.png" alt="" width="250" height="84">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastre-se</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit" style="color:#fff;border-color:#fff">Pesquisar</button>
-                    </form>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006466;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/resiliaflix2_logo.png" alt="" width="250" height="84">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cadastre-se</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar filme"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"
+                                style="color:#fff;border-color:#fff">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main></main>
+
+    <div class="main-content">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Encontre seu Slasher Favorito</h5>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <div class="col-12">
+                <ul class="filme_lista">
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/2.jpg" />
+                        <div class="filme_info">
+                            <div class="col-12">
+
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-information-variant"></span>
+                                </a>
+                                <p>Informações do filme</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
 
 
-    </header>
+
+
+    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/5.jpg" class=" w-60" alt="...">
+            <img src="img/5.jpg" class=" w-60" alt="...">
+            <img src="img/5.jpg" class=" w-60" alt="...">
+            <img src="img/5.jpg" class=" w-60" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/4.jpg" class=" w-60" alt="...">
+            <img src="img/4.jpg" class=" w-60" alt="...">
+            <img src="img/4.jpg" class=" w-60" alt="...">
+            <img src="img/4.jpg" class=" w-60" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class=" w-60" alt="...">
+            <img src="img/2.jpg" class=" w-60" alt="...">
+            <img src="img/2.jpg" class=" w-60" alt="...">
+            <img src="img/2.jpg" class=" w-60" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="containe">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false" class="container">
+            <div class="carousel-inner" class="fl">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="w-60" alt="...">
+                <img src="img/1.jpg" class="w-60" alt="...">
+                <img src="img/1.jpg" class="w-60" alt="...">
+                <img src="img/1.jpg" class="w-60" alt="...">
+                <img src="img/1.jpg" class="w-60" alt="...">
+                <img src="img/1.jpg" class="w-60" alt="...">
+                <img src="img/1.jpg" class="w-60" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" class="w-60" alt="...">
+                <img src="img/2.jpg" class="w-60" alt="...">
+                <img src="img/2.jpg" class="w-60" alt="...">
+                <img src="img/2.jpg" class="w-60" alt="...">
+                <img src="img/2.jpg" class="w-60" alt="...">
+                <img src="img/2.jpg" class="w-60" alt="...">
+                <img src="img/2.jpg" class="w-60" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/5.jpg" class="w-60" alt="...">
+                <img src="img/5.jpg" class="w-60" alt="...">
+                <img src="img/5.jpg" class="w-60" alt="...">
+                <img src="img/5.jpg" class="w-60" alt="...">
+                <img src="img/5.jpg" class="w-60" alt="...">
+                <img src="img/5.jpg" class="w-60" alt="...">
+                <img src="img/5.jpg" class="w-60" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div> -->
+
+    <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
