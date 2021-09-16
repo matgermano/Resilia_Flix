@@ -1,8 +1,5 @@
-.btn-outline-success:hover {
-    background-color: #212f45;
-}
-
-body, html{
+body,
+html {
     background-color: #0e1b2b;
     width: 100%;
 }
@@ -10,30 +7,29 @@ body, html{
 * {
     scrollbar-width: thin;
     scrollbar-color: #0e1b2b #171717;
-  }
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 3px;
     height: 10px;
-  }
+}
 
-  *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #171717;
-  }
+}
 
-  *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: #0e1b2b;
     border-radius: 10px;
     border: 1px outset #ffffff;
-  }
+}
 
-header{
+header {
     width: 100%;
 }
 
-main::after{
-    content:"";
+main::after {
+    content: "";
     width: 100%;
     height: 2%;
     display: block;
@@ -44,15 +40,19 @@ main::after{
     top: calc(700px - 350px);
 }
 
-.btn-custom-round{
+.btn-outline-success:hover {
+    background-color: #212f45;
+}
+
+.btn-custom-round {
     padding: 5px 9px !important;
 }
 
-.main-content{
+.list-content {
     margin-top: 5%;
 }
 
-.filme_lista{
+.filme_lista {
     overflow-x: scroll;
     list-style: none;
     white-space: nowrap;
@@ -61,38 +61,37 @@ main::after{
     border: 1px solid transparent;
 }
 
-.filme{
+.filme {
     display: inline-block;
     margin-right: 10px;
     border-radius: 5px;
     overflow: hidden;
     transition: 0.5s;
     overflow: auto;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     background-size: cover;
 }
 
-.filme:hover{
+.filme:hover {
     transform: scale(1.15);
-    z-index:999;
+    z-index: 999;
     transition: 0.5s;
 }
 
-.filme:hover .filme_info{
+.filme:hover .filme_info {
     transform: scale(1);
     transition: 0.5s;
 }
 
-
-.filme:first-child{
+.filme:first-child {
     margin-left: 70px;
 }
 
-.col-12{
+.col-12 {
     text-align: center;
 }
 
-.filme_info{
+.filme_info {
     background-color: #171717;
     padding: 10px;
     height: 80px;
@@ -100,25 +99,25 @@ main::after{
     transform: scale(0);
 }
 
-.filme_info .col-12{
+.filme_info .col-12 {
     margin-top: 5px;
 }
 
-.filme_info .col12:first-child{
+.filme_info .col12:first-child {
     margin-bottom: 20px;
 }
 
-.filme_info p{
+.filme_info p {
     color: #7E7B7B;
     font-size: 12px;
 }
 
-section{
+section {
     margin-bottom: -100px;
     position: relative;
     width: 100%;
 }
 
-section:hover{
+section:hover {
     z-index: 9;
 }
