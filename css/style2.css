@@ -1,0 +1,112 @@
+
+/* * {
+    font-family                               : 'Nunito Sans', sans-serif;
+  }
+  
+  :root {
+    --shadowDark                              : #D9DDE6;
+    --background                              : #E4E9F2;
+    --shadowLight                             : #EFF5FE;
+  }
+
+  body {
+    background                                : var(--background);
+    background-color                          : white;
+  }
+  
+
+  
+  .login {
+    border-radius                             : 25px;
+    padding                                   : 1.5rem;
+  }
+  
+  input {
+    background                                : var(--shadowDark) !important;
+  }
+
+  a {
+    font-weight                               : 600;
+  } */
+
+ body {
+    margin:0;
+    width: 100vw;
+    background: var(--background);
+    background-image: url(../img/bgmovies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+  .hero-body {
+    justify-content                           : center;
+    background-color                          : rgb(33,37,41);
+    border-radius                             : 25px;
+  }
+
+  .field:not(:last-child) {
+    margin-bottom                             : 1rem;
+    
+  }
+
+  .register {
+    margin-top                                : 10rem;
+    background                                : rgb(33,37,41);
+    border-radius                             : 10px;
+  }
+
+  .left,
+  .right {
+    padding                                   : 4.5rem;
+  }
+
+  .left {
+    border-right                              : 5px solid var(--background);
+  }
+
+  .left .title {
+    font-weight                               : 800;
+    letter-spacing                            : -2px;
+  }
+
+  .left .colored {
+    color                                     : var(--brandColor);
+    font-weight                               : 500;
+    margin-top                                : 1rem !important;
+    letter-spacing                            : -1px;
+  }
+
+  .left p {
+    color                                     : var(--textLight);
+    font-size                                 : 1.15rem;
+  }
+
+  .right .title {
+    font-weight                               : 800;
+    letter-spacing                            : -1px;
+  }
+
+  .right .description {
+    margin-top                                : 1rem;
+    margin-bottom                             : 1rem !important;
+    color                                     : var(--textLight);
+    font-size                                 : 1.15rem;
+  }
+
+  .right small {
+    color                                     : var(--textLight);
+  }
+
+  input {
+    font-size                                 : 1rem;
+    border-radius                             : 25px;
+    padding                                   : 1.5rem;
+    box-shadow                                : 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
+  }
+
+
+  .fab,
+  .fas {
+    color                                     : var(--textLight);
+    margin-right                              : 1rem;
+  }
