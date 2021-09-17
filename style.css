@@ -1,20 +1,11 @@
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-header {
-    height: 10%;
-}
-
-
-.container-imagem {
+.containerImagem {
     height: 1080px;
-    width: 1920px;    
+    width: 100%;    
     /* adicionando imagem de fundo */
     background: url('./img/resiliaflixfundo.jpg');    
     background-repeat: no-repeat;
-    /* background-size: cover; */ 
+    background-size: cover; 
+    background-position: center;
     
 }
 
@@ -40,19 +31,24 @@ header {
     margin-top: 25px;
     background-color: #4D194D;
     color: cornsilk;
+    box-shadow: 0 0 40px 40px #4D194D inset, 0 0 0 0 #4D194D;
+    transition: all 150ms ease-in-out; 
+    
 }
 
 #btnImagem:hover {    
     transform: scale(1.2) ;
+    box-shadow: 0 0 10px 0 #680e68 inset, 0 0 10px 4px #180118;
 }
 
-#btnImagem:active{
-    background:transparent;
-    /* border:none; */
-    /* outline:none; */
+#btnImagem:active, #btnImagem:focus{
+    background:transparent;    
+    outline: 0;
 }
 
-
+#btnImagem:active {
+    background: #412141;
+}
 
 #btnImagem {
     border: 2px solid transparent;
@@ -82,3 +78,12 @@ header {
     color: #ffffff;
 }
 
+
+@media (max-width: 991px){
+    .menuImagem{
+        display: flex;
+        width: 50%;
+        
+    }
+   
+}
