@@ -1,3 +1,18 @@
 body {
-    background: url(../img/bgmovies.jpg);
+    background-color: #1b263b;
+}
+
+#teste {
+    margin: 0 auto;
+    margin-top: 150px; 
+    width: 60%
+}
+@media (max-width:900px) {
+    #teste {
+        width: 80%;
+    }
+}
+
+h4 {
+    color:white;
 }
