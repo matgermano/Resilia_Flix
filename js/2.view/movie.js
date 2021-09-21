@@ -1,11 +1,3 @@
-$(document).ready(() => {
-  // $('#buscarForm').on('submit', (e) => {
-  //     let buscarTexto = $('#buscarTexto').val();
-  //     getMovies(buscarTexto)
-  //     e.preventDefault();
-  // });
-  getMovie();
-});
 function getMovie() {
   let movieId = sessionStorage.getItem("movieId");
   console.log(`Got movieID ${movieId}`);
