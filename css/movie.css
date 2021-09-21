@@ -1,9 +1,11 @@
 body {
     background-color: #1b263b;
+
 }
 
 .container {
     margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 h2, p {
@@ -33,4 +35,8 @@ h2, p {
 
 .botoes {
     margin-left: 23%;
+}
+
+.col-md-8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767)); ;
 }
