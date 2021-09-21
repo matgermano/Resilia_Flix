@@ -1,20 +1,21 @@
 $(document).ready(() => {
-    // $('#buscarForm').on('submit', (e) => {
-    //     let buscarTexto = $('#buscarTexto').val();
-    //     getMovies(buscarTexto)
-    //     e.preventDefault();
-    // });
-    getMovie();
+  // $('#buscarForm').on('submit', (e) => {
+  //     let buscarTexto = $('#buscarTexto').val();
+  //     getMovies(buscarTexto)
+  //     e.preventDefault();
+  // });
+  getMovie();
 });
 function getMovie() {
-    let movieId = sessionStorage.getItem('movieId');
-    console.log(`Got movieID ${movieId}`);
-    axios.get(`https://www.omdbapi.com/?i=${movieId}&apikey=3b8b5699`)
-        .then((response) => {
-            console.log('got response', response);
-            let movie = response.data;
+  let movieId = sessionStorage.getItem("movieId");
+  console.log(`Got movieID ${movieId}`);
+  axios
+    .get(`https://www.omdbapi.com/?i=${movieId}&apikey=3b8b5699`)
+    .then((response) => {
+      console.log("got response", response);
+      let movie = response.data;
 
-            let output = `
+      let output = `
                 <div class="row">
                 <div class="col-md-4">
                     <img src="${movie.Poster}" alt="thumbnail">
@@ -42,9 +43,9 @@ function getMovie() {
 
                 
                `;
-               $('#movie').html(output);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
+      $("#movie").html(output);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
