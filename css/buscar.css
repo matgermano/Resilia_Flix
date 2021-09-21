@@ -1,5 +1,5 @@
 body {
-    background: url(../img/bgmovies.jpg);
+    background-color: #1b263b;
 }
 
 #teste {
@@ -11,4 +11,8 @@ body {
     #teste {
         width: 80%;
     }
+}
+
+h4 {
+    color: blanchedalmond;
 }
