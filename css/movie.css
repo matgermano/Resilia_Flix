@@ -1,0 +1,36 @@
+body {
+    background-color: #1b263b;
+}
+
+.container {
+    margin-top: 150px;
+}
+
+h2, p {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.well p, .list-group-item {
+    color: rgb(222 222 222);
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    background: transparent;
+    border: none;
+    padding: 0.20rem;
+}
+
+#movies img, #movie img {
+    width: 100%
+}
+
+@media (max-width:900px) {
+    h2, p, .list-group-item {
+        text-align: center;
+    }
+}
+
+.botoes {
+    margin-left: 23%;
+}

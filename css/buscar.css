@@ -2,7 +2,7 @@ body {
     background-color: #1b263b;
 }
 
-#teste {
+#caixa {
     margin: 0 auto;
     margin-top: 150px; 
     width: 60%
@@ -14,5 +14,31 @@ body {
 }
 
 h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
     color:white;
+}
+
+#movies img{
+    width: 80%;
+}
+
+#movies .col-md-3 .well{
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#movies .col-md-3 img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#btnMovies {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }

@@ -22,19 +22,21 @@ function getMovie() {
                 <div class="col-md-8">
                     <h2>${movie.Title}</h2>
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>Genre:</strong>  ${movie.Genre}</li>
-                        <li class="list-group-item"><strong>Released:</strong>  ${movie.Released}</li>
-                        <li class="list-group-item"><strong>Rated</strong>  ${movie.Rated}</li>
-                        <li class="list-group-item"><strong>IMDB Rating:</strong>  ${movie.Rating}</li>
-                        <li class="list-group-item"><strong>Director:</strong>  ${movie.Director}</li>
-                        <li class="list-group-item"><strong>Writter:</strong>  ${movie.Writter}</li>
-                        <li class="list-group-item"><strong>Actors:</strong>  ${movie.Actors}</li>
+                        <li class="list-group-item"><strong>Gênero:</strong>  ${movie.Genre}</li>
+                        <li class="list-group-item"><strong>Lançamento:</strong>  ${movie.Released}</li>
+                        <li class="list-group-item"><strong>Classificação indicativa</strong>  ${movie.Rated}</li>
+                        <li class="list-group-item"><strong>Avaliação IMDB:</strong>  ${movie.Rating}</li>
+                        <li class="list-group-item"><strong>Diretor:</strong>  ${movie.Director}</li>
+                        <li class="list-group-item"><strong>Roteirista:</strong>  ${movie.Writter}</li>
+                        <li class="list-group-item"><strong>Atores:</strong>  ${movie.Actors}</li>
                     </ul>
                     <div class="well">
-                    <h2>Plot</h2>
+                    <h2>Resumo</h2>
                     <p>${movie.Plot}</p>
-                    <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank" class="btn">Watch the movie</a>
-                    <a href="../index.html" class="btn">Go back</a>
+                    <div class="botoes">
+                    <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-outline-light">Assista ao filme</a>
+                    <a href="../index.html" class="btn btn-outline-light">Voltar</a>
+                    </div>
                     </div>
                 </div>
 
