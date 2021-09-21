@@ -34,7 +34,7 @@ function getMovie() {
                     <h2>Plot</h2>
                     <p>${movie.Plot}</p>
                     <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank" class="btn">Watch the movie</a>
-                    <a href="index.html" class="btn">Go back</a>
+                    <a href="../index.html" class="btn">Go back</a>
                     </div>
                 </div>
 
