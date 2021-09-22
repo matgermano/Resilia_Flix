@@ -1,5 +1,53 @@
-body,
-html {
+main {
+  background-color: black;
+  width: 100%;
+  height: 700px;
+}
+
+#caixa {
+  margin-top: 120px;
+  background-image: url(../img/resiliaflixfundo.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#botao {
+  border-top-width: 0px ;
+  margin-top: 25px;
+  background-color: #4D194D;
+  border-color: #4D194D ;
+  color: cornsilk;
+  box-shadow: 0 0 40px 40px #4D194D inset, 0 0 0 0 #4D194D;
+  transition: all 150ms ease-in-out;
+  font-weight: 700;
+  letter-spacing: .2em;
+  padding: .55em 1.5em .5em;
+  text-transform: uppercase;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s; 
+}
+
+#botao:hover {
+  transform: scale(1.1) ;
+  box-shadow: 0 0 10px 0 #680e68 inset, 0 0 10px 4px #180118;
+  background:transparent;
+}
+
+#botao:active, #botao:focus{
+  background:transparent;    
+  outline: 0;
+}
+
+#botao:active {
+  background: #412141;
+}
+
+#btnLink {
+  color: white;
+}
+
+body{
   background-color: #0e1b2b;
   width: 100%;
 }
@@ -22,10 +70,6 @@ html {
   background-color: #0e1b2b;
   border-radius: 10px;
   border: 1px outset #ffffff;
-}
-
-header {
-  width: 100%;
 }
 
 main::after {
