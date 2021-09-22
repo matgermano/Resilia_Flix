@@ -17,7 +17,7 @@ Nosso projeto foi desenvolvido como projeto de fim de módulo, nele utilizamos o
 Aproveite e confira o melhor do streaming focado em filmes de <b> TERROR </b>
 <img src="./img/readme/telainicial.png">
 
-<h1>Nossa time de Dev's </h1>
+<h1>Nossa time de Desenvolvedores: </h1>
 <img src="./img/readme/integrantes.png">
 
 - <a href = "https://www.linkedin.com/in/rafael-soares-48ba6a144/"> Rafael Soares </a>
