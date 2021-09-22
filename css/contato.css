@@ -1,0 +1,80 @@
+        *,
+        html {
+            margin                                : 0;
+            padding                               : 0;
+            box-sizing                            : border-box;
+        }
+
+        body {
+            margin                                : 0;
+            width                                 : 100vw;
+            background                            : var(--background);
+            background-color                      : #1B263B;
+            background-repeat                     : no-repeat;
+            background-size                       : cover;
+        }
+
+
+        .figure {
+            padding                               : 25px;
+            height                                : 300px;
+            margin                                : auto;
+            display                               : flex;
+            flex-flow                             : column wrap;
+            width                                 : 300px;
+            max-width                             : 350px;
+        }
+
+        .container {
+            display                               : flex;
+            justify-content                       : center;
+            height                                : 150px;
+            align-items                           : center;
+            margin                                : 0 auto;
+            max-width                             : 350px;
+
+        }
+
+        .textoContatos {
+            font-family                           : 'Helvetica', cursive;
+            color                                 : white;
+            text-align                            : center;
+            margin-top                            : 150px;
+        }
+
+        .menu {
+            font-family                           : 'Helvetica', sans-serif;
+            color                                 : white;
+            text-align                            : center;
+            font-size                             : 30px;
+            padding                               : 5px;
+
+        }
+
+        .container div {
+
+            height                                : 60px;
+            width                                 : 230px;
+            border                                : 1 px solid black;
+            padding                               : 20px;
+
+        }
+
+
+        .background {
+            background-color                      : #0D1B2A;
+        }
+
+
+        /* -----------------------------------*/
+        /* ---------->>> media query <<<-----------*/
+        /* -----------------------------------*/
+
+        @media(max-width:350px) {
+
+            .figure {
+                display                           : flex;
+                flex-wrap                         : wrap;
+                justify-content                   : center;
+            }
+        }

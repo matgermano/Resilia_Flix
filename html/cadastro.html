@@ -1,175 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang                          = "pt-br">
 
 <head>
-
-
-  <meta charset                       = "UTF-8">
-  <meta http-equiv                    = "X-UA-Compatible" content="IE=edge">
-  <meta name                          = "viewport" content="width=device-width, initial-scale=1.0">
-  <script src                         = "https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
-  <link rel                           = "stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-  <link href                          = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity                         = "sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel                           = "shortcut icon" href="../img/favicon.ico">
-  <link rel                           = "stylesheet" href='../css/style2.css'>
-  <!-- <style type                         = "text/css">
-    body {
-      display                         : flex;
-      justify-content                 : center;
-      align-items                     : center;
-      min-height                      : 100vh;
-    }
-
-    .area {
-      padding: 10px;
-      width                           : 300px;
-      max-width                       : 350px;
-      text-align                      : center;
-      align-items                     : center;
-    }
-  </style> -->
-
-  <title>Resiliaflix</title>
+    <meta charset                   = "UTF-8">
+    <meta http-equiv                = "X-UA-Compatible" content="IE=edge">
+    <script src                     = "https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link href                      = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity                   = "sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta name                      = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel                       = "stylesheet" href="../css/style2.css">
+    <title>Contato</title>
 </head>
 
 <body>
-  <header>
-    <nav class                        = "navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0d1b2a">
-      <div class                      = "container-fluid">
-        <a class                      = "navbar-brand" href="#">
-          <img src                    = "../img/resiliaflix2_logo.png" alt="" width="250" height="84">
-        </a>
-        <button class                 = "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls               = "navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class                 = "navbar-toggler-icon"></span>
-        </button>
-        <div class                    = "collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class                   = "navbar-nav me-auto mb-2 mb-lg-0">
-            <li class                 = "nav-item">
-              <a class                = "nav-link" href="../index.html">Home</a>
-            </li>
-            <li class                 = "nav-item">
-              <a class                = "nav-link" href="../html/login.html">Login</a>
-            </li>
-            <li class                 = "nav-item">
-              <a class                = "nav-link active" href="../html/cadastro.html">Cadastre-se</a>
-            </li>
-            <li class                 = "nav-item">
-              <a class                = "nav-link" aria-current="page" href="../html/buscar.html">Buscar filme</a>
-            </li>
-            <li class                 = "nav-item">
-              <a class                = "nav-link" href="../html/contato.html">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <section class                      = "container">
-    <div class                        = "columns is-multiline">
-      <div class                      = "column is-8 is-offset-2 register">
-        <div class                    = "columns">
 
-          <div class                  = "column right has-text-centered">
-            <h1 class                 = "title is-4" style="color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
-              Cadastre-se</h1>
-
-            <img src                  = "../img/logomorte2.png" width="325px" />
-            <div class                = "area">
-              <form method            = "get" action=".">
-                <div class            = "field">
-                  <label class        = "label"
-                    style             = "color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Nome</label>
-                  <div class          = "control">
-                    <input class      = "input input is-info is-block is-fullwidth is-dark is-small" type="text"
-                      placeholder     = "Nome Completo" value="">
-                  </div>
-                </div>
-                <div class            = "field">
-                  <label class        = "label"
-                    style             = "color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Cep:
-                    <input class      = "input input is-info is-block is-fullwidth is-dark is-small" name="cep" type="text"
-                      id              = "cep" value="" size="10" maxlength="9" /></label><br />
-                  <label class        = "label"
-                    style             = "color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Rua:
-                    <input class      = "input input is-info is-block is-fullwidth is-dark is-small" name="rua" type="text"
-                      id              = "rua" size="60" /></label><br />
-                  <label class        = "label"
-                    style             = "color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Bairro:
-                    <input class      = "input input is-info is-block is-fullwidth is-dark is-small" name="bairro" type="text"
-                      id              = "bairro" size="40" /></label><br />
-                  <label class        = "label"
-                    style             = "color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Cidade:
-                    <input class      = "input input is-info is-block is-fullwidth is-dark is-small" name="cidade" type="text"
-                      id              = "cidade" size="40" /></label><br />
-                  <label class        = "label"
-                    style             = "color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Estado:
-                    <input class      = "input input is-info is-block is-fullwidth is-dark is-small" name="uf" type="text"
-                      id              = "uf" size="2" /></label>
-                </div>
-
-                <div class            = "field">
-                  <div class          = "field">
-                    <label class      = "label"
-                      style           = "color: white;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Email</label>
-                    <div class        = "control has-icons-left has-icons-right">
-                      <input class    = "input input is-info is-block is-fullwidth is-dark is-small" type="text"
-                        placeholder   = "Email" value="">
-                      <span class     = "icon is-small is-left">
-                        <i class      = "fas fa-envelope"></i>
-                      </span>
-                      <span class     = "icon is-small is-right">
-                        <i class      = "fas fa-exclamation-triangle"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <button class         = "button is-info is-small is-rounded" type="submit"
-                  style               = "background-color: #4D194D;     color: cornsilk; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;    box-shadow: 0 0 40px 40px #4D194D inset, 0 0 0 0 #4D194D; transition: all 150ms ease-in-out;">Submit</button>
-                <br />
-              </form>
+    <nav class                      = "navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0d1b2a">
+        <div class                  = "container-fluid">
+            <a class                = "navbar-brand" href="#">
+                <img src            = "../img/resiliaflix2_logo.png" alt="" width="250" height="84">
+            </a>
+            <button class           = "navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target      = "#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label          = "Toggle navigation">
+                <span class         = "navbar-toggler-icon"></span>
+            </button>
+            <div class              = "collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class           = "navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class       = "nav-item">
+                        <a class    = "nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class       = "nav-item">
+                        <a class    = "nav-link" href="../html/login.html">Login</a>
+                    </li>
+                    <li class       = "nav-item">
+                        <a class    = "nav-link active" href="../html/cadastro.html">Cadastre-se</a>
+                    </li>
+                    <li class       = "nav-item">
+                        <a class    = "nav-link" aria-current="page" href="../html/buscar.html">Buscar filme</a>
+                    </li>
+                    <li class       = "nav-item">
+                        <a class    = "nav-link" href="../html/contato.html">Contato</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-      <div class                      = "column is-8 is-offset-2">
-      </div>
+    </nav>
+    <div class                      = "area">
+        <div class                  = "container-fluid bg">
+            <div class              = "row">
+
+
+                <h3>Cadastro</h3>
+                <!-- início do formulário -->
+                <form class         = "formContainer" method="get" action=".">
+                    <img class      = "logo" src="../img/logomorte2.png" alt="">
+                    <div class      = "form-group">
+                        <label for  = "se13" style="color: white; font-size: 14px;">Nome</label>
+                        <input type = "text" name="email" placeholder="Nome completo" size="10" maxlength="9"
+                            class   = "form-control" id="inputdefault">
+                    </div>
+                    <div class      = "form-group">
+                        <label for  = "se13" style="color: white; font-size: 14px;">Cep</label><br>
+                        <input name = "cep" type="text" id="cep" value="" size="17" maxlength="9" /></label><br />
+                    </div>
+
+                    <div class      = "form-group">
+                        <label for  = "inputNome" style="color: white; font-size: 14px;">Rua</label>
+                        <input type = "text" name="rua" placeholder="" size="10" maxlength="9" class="form-control"
+                            id      = "inputRua">
+                    </div>
+                    <div class      = "form-group">
+                        <label for  = "inputNome" style="color: white; font-size: 14px;">Bairro</label>
+                        <input type = "text" name="bairro" placeholder="" size="10" maxlength="9" class="form-control"
+                            id      = "inputBairro">
+                    </div>
+                    <div class      = "form-group">
+                        <label for  = "inputNome" style="color: white; font-size: 14px;">Cidade</label>
+                        <input type = "text" name="cidade" placeholder="" size="10" maxlength="9" class="form-control"
+                            id      = "inputCidade">
+                    </div>
+                    <div class      = "form-group">
+                        <label for  = "inputNome" style="color: white; font-size: 14px;">Estado</label>
+                        <input type = "text" name="" placeholder="" size="10" maxlength="9" class="form-control"
+                            id      = "inputEstado">
+                    </div>
+                    <div class      = "form-group">
+                        <label for  = "inputNome" style="color: white; font-size: 14px;">E-mail</label>
+                        <input type = "text" name="email" placeholder="E-mail" size="10" maxlength="9"
+                            class   = "form-control" id="inputEmail">
+                    </div>
+                    <br>
+                    <button class   = "btn btn-outline-light" type="submit" id="botao">Enviar</button>
+
+                </form>
+                <!-- fim do formulário -->
+
+            </div>
+
+        </div>
     </div>
-  </section>
-  <footer class                       = "footer" style="padding:0; background-color:rgb(13,27,42)">
-    <div class                        = "content is-medium has-text-centered">
-      <div class                      = "level-item">
-        <span class                   = "icon" style="color: white;">
-          <i class                    = "fab fa-twitter"></i>
-        </span> &emsp;
-        <span class                   = "icon" style="color: white;">
-          <i class                    = "fab fa-facebook"></i>
-        </span> &emsp;
-        <span class                   = "icon" style="color: white;">
-          <i class                    = "fab fa-instagram"></i>
-        </span> &emsp;
-        <span class                   = "icon" style="color: white;">
-          <i class                    = "fab fa-github"></i>
-        </span> &emsp;
-        <span class                   = "icon" style="color: white;">
-          <i class                    = "fas fa-envelope"></i>
-        </span>
-      </div>
-      <p class                        = "is-small"
-        style                         = "color: white; font-size: 17px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
-        <small class                  = "level-item ">
-          &copy; A E M R. All Rights Reserved.
-        </small>
-      </p>
     </div>
-  </footer>
-  <script src                         = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity                         = "sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin                       = "anonymous"></script>
-  <script src                         = "https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity                         = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src                         = "../js/form.js"></script>
+
+
+    <script src                     = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity                   = "sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin                 = "anonymous"></script>
+    <script src                     = "../js/buscar.js"></script>
 
 </body>
 
