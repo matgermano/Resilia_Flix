@@ -53,7 +53,7 @@
         </nav>
     </header>
     <main>
-        <div class="container col-xxl-8 px-1 py-5">
+        <div class="container col-xxl-8 px-1 py-5" id="teste">
             <div class="text-secondary px-4 py-5 text-center" id="caixa">
                 <div class="py-5">
                     <h1 class="display-5 fw-bold text-white">Cadastre-se já</h1>
@@ -81,22 +81,22 @@
             </div>
             <div class="col-12">
                 <ul class="filme_lista">
-                    <li class="filme" id="movie">
+                    <li class="filme" id="movie" onclick="apiFilme('halloween')">
                         <img class="img-fluid" src="./img/movies/1_halloween.jpg"/>
                         <div class="filme_info">
-                            <div class="col-12">
+                            <div class="col-12" >
                                 <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
+                                    <span class="mdi mdi-information-variant"></span> 
                                 </a>
                                 <p>Informações do filme</p>
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('friday the 13th')">
                         <img class="img-fluid" src="./img/movies/2_sexta.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
-                                <a type="submit" onclick="movieSelected('${movie.imdbID}')" id="teste"
+                                <a type="submit" id="teste"
                                     class="btn-custom-round btn btn-light rounded-circle">
                                     <span class="mdi mdi-information-variant"></span>
                                 </a>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('a nightmare on elm street')">
                         <img class="img-fluid" src="img/movies/3_pesadelo.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('the texas chainsaw massacre')">
                         <img class="img-fluid" src="img/movies/4_massacre.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('the evil dead')">
                         <img class="img-fluid" src="img/movies/5_demonio.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('the omen')">
                         <img class="img-fluid" src="img/movies/6_profecia.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -150,8 +150,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
-                        <img class="img-fluid" src="img/movies/7_rosemary.jpg" />
+                    <li class="filme" onclick="apiFilme('saw')">
+                        <img class="img-fluid" src="img/saw.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
                                 <a href="#" class="btn-custom-round btn btn-light rounded-circle">
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('scream')">
                         <img class="img-fluid" src="img/movies/8_panico.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -172,7 +172,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('the amityville horror')">
                         <img class="img-fluid" src="img/movies/9_amityville.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('pet sematary')">
                         <img class="img-fluid" src="img/movies/10_cemiterio.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('carrie')">
                         <img class="img-fluid" src="img/movies/11_carrie.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('the shining')">
                         <img class="img-fluid" src="img/movies/12_iluminado.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -220,6 +220,20 @@
                 </ul>
             </div>
         </section>
+    </div>
+    <div id="infoOmdb">
+        <div id="poster">   
+        </div>
+        <div id="infoContainer">
+            <h2 id="titulo"></h2>
+            <h4 id="diretor"></h4>
+            <h4 id="ano"></h4>
+            <h4 id="duracao"></h4>
+            <h4 id="genero"></h4>
+            <h4 id="sinopse"></h4>
+            <div id="btnPesquisa">
+            </div>
+        </div> 
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -263,5 +277,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="./js/main.js"></script>
 
 </html>

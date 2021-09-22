@@ -171,3 +171,78 @@ section {
 section:hover {
   z-index: 9;
 }
+
+#infoOmdb{
+  display: flex;
+  flex-direction: row;
+}
+
+#titulo{
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+#infoContainer{
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767))
+}
+
+
+#diretor, #ano, #duracao, #genero, #sinopse{
+  margin-left: 3%;
+}
+
+#btnPesquisa{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#botao{
+  border-top-width: 0px ;
+  background-color: #4D194D;
+  border-color: #4D194D ;
+  color: cornsilk;
+  box-shadow: 0 0 40px 40px #4D194D inset, 0 0 0 0 #4D194D;
+  transition: all 150ms ease-in-out;
+  font-weight: 700;
+  letter-spacing: .2em;
+  padding: .55em 1.5em .5em;
+  text-transform: uppercase;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s; 
+}
+
+#tirar{
+  text-decoration: none;
+}
+
+#botao:hover {
+  transform: scale(1.1) ;
+  box-shadow: 0 0 10px 0 #680e68 inset, 0 0 10px 4px #180118;
+  background:transparent;
+}
+
+#botao:active, #botao:focus{
+  background:transparent;    
+  outline: 0;
+}
+
+#botao:active {
+  background: #412141;
+}
+
+#btnLink {
+  color: white;
+}
+
+@media (max-width : 760px){
+  #infoOmdb{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #poster{
+    margin-left: 9%;
+  }
+}
