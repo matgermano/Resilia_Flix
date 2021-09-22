@@ -2,6 +2,10 @@ body {
     background-color: #1b263b;
 }
 
+main {
+    margin-bottom: 300px;
+}
+
 #caixa {
     margin: 0 auto;
     margin-top: 150px; 
