@@ -1,0 +1,35 @@
+main {
+    background-color        : #eee;
+    display                 : flex;
+    background-image        : url(../img/bgmovies.jpg);
+    justify-content         : center;
+    align-items             : center;
+    min-height              : 100vh;
+}
+
+.formContainer {
+
+    background-color        : #212529;
+    border                  : 0px solid white;
+    padding                 : 40px 50px;
+    margin-top              : 20vh;
+    border-radius           : 4%;
+}
+
+
+.area {
+    padding                 : 10px;
+    /* width: 300px; */
+    max-width               : 350px;
+    text-align              : center;
+
+}
+
+.logo {
+    width                   : 200px;
+    height                  : auto;
+}
+
+body {
+    background-color:#0e1b2b;
+}

@@ -1,21 +1,82 @@
-async function apiOmdb(filme) {
+
+
+
+
+
+// async function apiOmdb(filme) {
+//   const apikey = "3b8b5699";
+//   let url = `http://www.omdbapi.com/?i=${movieId}&apikey=${apikey}&`;
+//   let response = await fetch(url).then((response) => response.json());
+//   console.log(response);
+//   try {
+//     if (response.Poster !== undefined) {
+//       sucessoApi(response);
+//     } else {
+//       throw new Error(
+//         "Poster não encontrado"
+//       );
+//     }
+//   } catch (error) {
+//     erroApi(error);
+//   }
+// }
+
+
+
+async function pegaFilme(){
   const apikey = "3b8b5699";
+  const movieId = "tt0077651";
   let url = `http://www.omdbapi.com/?i=${movieId}&apikey=${apikey}&`;
   let response = await fetch(url).then((response) => response.json());
   console.log(response);
   try {
     if (response.Poster !== undefined) {
-      sucessoApi(response);
+      $(`#filme1`).html(`<img class="img-fluid" src="${response.Poster}"/>
+      <div class="filme_info">
+          <div class="col-12">
+              <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                  <span class="mdi mdi-information-variant"></span>
+              </a>
+              <p>Informações do filme</p>
+          </div>
+      </div>`)
     } else {
       throw new Error(
         "Poster não encontrado"
       );
     }
   } catch (error) {
-    erroApi(error);
+    console.log(error);
   }
 }
+window.onload = () =>{
+  load(pegaFilme())
+}
 
+
+
+  // $.ajax({
+  //     url: `http://www.omdbapi.com/?i=${movieId}&apikey=${apikey}&`,
+  //     type: 'GET',
+  //     dataType: 'json',
+  //     beforeSend: function(){
+  //         $('#filme1').html(`src="${json.Poster}"`)
+  //     },
+  //     success:function(json){
+  //       var html = '';
+  //       for (var i in json){
+  //           html += 'src="'+ json[i].poster +'">'+json[i].titulo+'';
+  //       }
+  //       $('#filme').html(html)
+  //     }
+  // })
+
+
+
+// function insereFilme(){
+// let movieId = "tt0077651" 
+// ${"#filme1"}.appendchild.${"src"}.html(response.Poster)
+// }
 
 // $("button").on("click", async function (event) {
 //   event.preventDefault();
