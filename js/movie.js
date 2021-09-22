@@ -36,7 +36,7 @@ function getMovie() {
                     <p>${movie.Plot}</p>
                     <div class="botoes">
                     <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-outline-light">Assista ao filme</a>
-                    <a href="../index.html" class="btn btn-outline-light">Voltar</a>
+                    <a href="../HTML/buscar.html" class="btn btn-outline-light">Voltar</a>
                     </div>
                     </div>
                 </div>
