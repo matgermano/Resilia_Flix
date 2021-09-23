@@ -62,8 +62,12 @@
                                 id="nome">
                         </div>
                         <div class="form-group">
-                            <label for="se13" style="color: white; font-size: 14px;">Cep</label><br>
-                            <input name="cep" type="text" id="cep" value="" size="17" /></label><br />
+                            <label for="se13" style="color: white; font-size: 14px;">RG</label><br>
+                            <input name="rg" type="text" id="rg" placeholder="Insira seu RG" size="10" class="form-control" /></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="se13" style="color: white; font-size: 14px;">CEP</label><br>
+                            <input name="cep" type="text" id="cep" placeholder="Insira seu CEP" size="10" class="form-control" /></label>
                         </div>
 
                         <div class="form-group">
@@ -83,12 +87,21 @@
                             <input type="text" name="" placeholder="" size="10" class="form-control" id="uf">
                         </div>
                         <div class="form-group">
-                            <label for="inputNome" style="color: white; font-size: 14px;">E-mail</label>
-                            <input type="text" name="email" placeholder="E-mail" size="10" class="form-control"
-                                id="email">
+                            <label class="labels" for="inputEmail" style="color: white; font-size: 14px;">E-mail</label>
+                            <input type="email" name="email" placeholder="Digite seu email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="form-group">
+                            <label class="labels" for="inputPassword" style="color: white; font-size: 14px;">Senha</label>
+                            <input type="password" name="password" placeholder="Digite sua senha" class="form-control"
+                                id="inputPassword">
+                        </div>
+                        <div class="form-group">
+                            <label class="labels" for="inputPassword" style="color: white; font-size: 14px;">Confirme</label>
+                            <input type="password" name="password" placeholder="Confirme sua senha" class="form-control"
+                                id="inputPassword">
                         </div>
                         <br>
-                        <button class="btn btn-outline-light" type="submit" id="botao">Enviar</button>
+                        <button class="btn btn-outline-light" type="submit" id="botao"><a href="./login.html" id="tirar">Enviar</a></button>
 
 
 

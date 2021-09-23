@@ -40,6 +40,13 @@ body {
   margin-top: 10%;
 }
 
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #0e1b2b #171717;

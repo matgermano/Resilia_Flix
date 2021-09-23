@@ -27,6 +27,15 @@ main {
   height: auto;
 }
 
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+#botao:hover{
+  color: #212529;
+}
+
 body {
   background-color: #0e1b2b;
 }
