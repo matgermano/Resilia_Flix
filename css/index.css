@@ -186,6 +186,13 @@ section:hover {
 #infoContainer {
   color: #ffffff;
   background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767));
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#poster {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #diretor,
@@ -241,7 +248,7 @@ section:hover {
   color: white;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   #infoOmdb {
     display: flex;
     flex-direction: column;
@@ -249,5 +256,20 @@ section:hover {
   }
   #poster {
     margin-left: 9%;
+  }
+
+  .stories {
+    width: 196px;
+    height: 350px;
+  }
+
+  #custom-cards {
+    margin-right: 80%;
+    width: 200px;
+  }
+
+  #infoContainer {
+    background: transparent;
+
   }
 }
