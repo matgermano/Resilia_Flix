@@ -54,12 +54,11 @@ body {
   background-color: #0e1b2b;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
-  
 }
 
-a:hover{
-  color:#171717;
+a:hover {
+  color: #171717;
 }

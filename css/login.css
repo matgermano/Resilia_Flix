@@ -40,12 +40,10 @@ body {
   margin-top: 10%;
 }
 
-a{
+a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
-
-
 
 * {
   scrollbar-width: thin;

@@ -12,7 +12,7 @@ main {
   border: 0px solid white;
   padding: 40px 50px;
   margin-top: 20vh;
-  border-radius: 4%;  
+  border-radius: 4%;
 }
 
 .area {
@@ -27,12 +27,12 @@ main {
   height: auto;
 }
 
-a{
+a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 
-#botao:hover{
+#botao:hover {
   color: #212529;
 }
 
