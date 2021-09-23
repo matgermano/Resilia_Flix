@@ -9,22 +9,17 @@ $(document).ready(() => {
  
 });
 
-const botao = document.querySelector("#botao");
-$('#buscarForm').on('submit', (e) => {
-    botao.onclick = () => {
-        getMovies(botao)
-        e.preventDefault();
-    }
-})
 
 function getMovies(buscarTexto) {
     axios.get('https://www.omdbapi.com/?s=' + buscarTexto + '&apikey=3b8b5699')
         .then((response) => {
-            console.log(response);
+           
             let movies = response.data.Search;
-            let output = '';
+            console.log(123, movies);
+            let saida = '';
+            
             $.each(movies, (index, movie) => {
-                output += `
+                saida += `
             <div class="col-md-4">
               <div class="well text-center">
                 <img class="movie-poster" src="${movie.Poster}" alt="Name of the movie"> 
@@ -32,11 +27,24 @@ function getMovies(buscarTexto) {
                 <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-outline-light" id="btnMovies"  href="#">Detalhes do Filme</a>
               </div>
             </div>                 
-            `;
+            ` ;
+            // console.log(456, saida);
+            
             });
+           if(movies === undefined){
+               saida = `
+               
+               <div>
+               
+                    <h2 style="color: white; text-align: center;"> Nenhum resultado para essa busca. Tente novamente.  </h2>
 
+                </div>
+               
+               `
+               console.log('Não há títulos')
+           }
 
-            $('#movies').html(output);
+            $('#movies').html(saida);
         })
         .catch((err) => {
             console.log(err);
