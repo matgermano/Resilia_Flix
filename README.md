@@ -15,7 +15,7 @@ Nosso projeto foi desenvolvido como projeto de fim de módulo, nele utilizamos o
 
 <h2>Como aproveitar o tempo livre no HOME OFFICE?</h2>
 💀Aproveite e confira o melhor do streaming focado em filmes de <b>TERROR</b>💀
-<img src="./img/readme/telainicial.png">
+<img src="./img/tela_inicial.jpeg">
 
 <h1>💻Nosso time de Desenvolvedores: </h1>
 <img src="./img/readme/integrantes.png">
