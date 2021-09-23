@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 #contatos {
@@ -39,5 +39,11 @@ h2 {
     .btn-outline-light {
         margin-left: 35%;
         margin-bottom: 10px;
+    }
+}
+
+@media (min-width:1096px) {
+    main {
+        margin-bottom: 300px;
     }
 }
