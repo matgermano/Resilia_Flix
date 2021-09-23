@@ -53,3 +53,13 @@ main {
 body {
   background-color: #0e1b2b;
 }
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+a:hover{
+  color:#171717;
+}

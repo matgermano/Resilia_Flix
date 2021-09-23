@@ -11,7 +11,6 @@ Nosso projeto foi desenvolvido como projeto de fim de módulo, nele utilizamos o
 - API rest
 - HTML5
 - CSS3
-- MVC
 
 <h2>Como aproveitar o tempo livre no HOME OFFICE?</h2>
 💀Aproveite e confira o melhor do streaming focado em filmes de <b>TERROR</b>💀
