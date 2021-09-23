@@ -1,53 +1,77 @@
 body {
-    background-color: #1b263b;
-
+  background-color: #1b263b;
 }
 
 .container {
-    margin-top: 150px;
-    margin-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 30px;
 }
 
-h2, p {
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
+h2,
+p {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.well p, .list-group-item {
-    color: rgb(222 222 222);
-    font-family: sans-serif;
-    letter-spacing: 2px;
-    background: transparent;
-    border: none;
-    padding: 0.20rem;
+.well p,
+.list-group-item {
+  color: rgb(222 222 222);
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  background: transparent;
+  border: none;
+  padding: 0.2rem;
 }
 
-#movies img, #movie img {
-    width: 100%
+#movies img,
+#movie img {
+  width: 100%;
 }
 
-@media (max-width:900px) {
-    h2, p, .list-group-item {
-        text-align: center;
-    }
+@media (max-width: 900px) {
+  h2,
+  p,
+  .list-group-item {
+    text-align: center;
+  }
 }
 
 .botoes {
-    margin-left: 23%;
+  margin-left: 23%;
 }
 
 .col-md-8 {
-    background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767)); ;
+  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767));
 }
 
-@media (max-width:900px) {
-    .col-md-8 {
-        background: transparent;
-    }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0e1b2b #171717;
+}
 
-    #movies img, #movie img {
-        width: 90%;
-        margin-left: 5%;
-    }
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0e1b2b;
+  border-radius: 10px;
+  border: 1px outset #ffffff;
+}
+
+@media (max-width: 900px) {
+  .col-md-8 {
+    background: transparent;
+  }
+
+  #movies img,
+  #movie img {
+    width: 90%;
+    margin-left: 5%;
+  }
 }

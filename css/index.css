@@ -7,35 +7,36 @@ main {
 #caixa {
   margin-top: 120px;
   background-image: url(../img/resiliaflixfundo.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #botao {
-  border-top-width: 0px ;
+  border-top-width: 0px;
   margin-top: 25px;
-  background-color: #4D194D;
-  border-color: #4D194D ;
+  background-color: #4d194d;
+  border-color: #4d194d;
   color: cornsilk;
-  box-shadow: 0 0 40px 40px #4D194D inset, 0 0 0 0 #4D194D;
+  box-shadow: 0 0 40px 40px #4d194d inset, 0 0 0 0 #4d194d;
   transition: all 150ms ease-in-out;
   font-weight: 700;
-  letter-spacing: .2em;
-  padding: .55em 1.5em .5em;
+  letter-spacing: 0.2em;
+  padding: 0.55em 1.5em 0.5em;
   text-transform: uppercase;
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s; 
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 #botao:hover {
-  transform: scale(1.1) ;
+  transform: scale(1.1);
   box-shadow: 0 0 10px 0 #680e68 inset, 0 0 10px 4px #180118;
-  background:transparent;
+  background: transparent;
 }
 
-#botao:active, #botao:focus{
-  background:transparent;    
+#botao:active,
+#botao:focus {
+  background: transparent;
   outline: 0;
 }
 
@@ -47,7 +48,7 @@ main {
   color: white;
 }
 
-body{
+body {
   background-color: #0e1b2b;
   width: 100%;
 }
@@ -104,11 +105,11 @@ main::after {
   border: 1px solid transparent;
 }
 
-.img-fluid{
+.img-fluid {
   background-size: cover;
   background-position: center;
   width: 200px;
-  height: 300px; 
+  height: 300px;
 }
 
 .filme {
@@ -172,59 +173,63 @@ section:hover {
   z-index: 9;
 }
 
-#infoOmdb{
+#infoOmdb {
   display: flex;
   flex-direction: row;
 }
 
-#titulo{
+#titulo {
   text-align: center;
   margin-bottom: 8%;
 }
 
-#infoContainer{
+#infoContainer {
   color: #ffffff;
-  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767))
+  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.767));
 }
 
-
-#diretor, #ano, #duracao, #genero, #sinopse{
+#diretor,
+#ano,
+#duracao,
+#genero,
+#sinopse {
   margin-left: 3%;
 }
 
-#btnPesquisa{
+#btnPesquisa {
   display: flex;
   justify-content: center;
   margin-top: 5%;
 }
 
-#botao{
-  border-top-width: 0px ;
-  background-color: #4D194D;
-  border-color: #4D194D ;
+#botao {
+  border-top-width: 0px;
+  background-color: #4d194d;
+  border-color: #4d194d;
   color: cornsilk;
-  box-shadow: 0 0 40px 40px #4D194D inset, 0 0 0 0 #4D194D;
+  box-shadow: 0 0 40px 40px #4d194d inset, 0 0 0 0 #4d194d;
   transition: all 150ms ease-in-out;
   font-weight: 700;
-  letter-spacing: .2em;
-  padding: .55em 1.5em .5em;
+  letter-spacing: 0.2em;
+  padding: 0.55em 1.5em 0.5em;
   text-transform: uppercase;
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s; 
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-#tirar{
+#tirar {
   text-decoration: none;
 }
 
 #botao:hover {
-  transform: scale(1.1) ;
+  transform: scale(1.1);
   box-shadow: 0 0 10px 0 #680e68 inset, 0 0 10px 4px #180118;
-  background:transparent;
+  background: transparent;
 }
 
-#botao:active, #botao:focus{
-  background:transparent;    
+#botao:active,
+#botao:focus {
+  background: transparent;
   outline: 0;
 }
 
@@ -236,13 +241,13 @@ section:hover {
   color: white;
 }
 
-@media (max-width : 760px){
-  #infoOmdb{
+@media (max-width: 760px) {
+  #infoOmdb {
     display: flex;
     flex-direction: column;
     align-content: center;
   }
-  #poster{
+  #poster {
     margin-left: 9%;
   }
 }

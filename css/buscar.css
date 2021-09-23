@@ -1,48 +1,66 @@
 body {
-    background-color: #1b263b;
+  background-color: #1b263b;
 }
 
 main {
-    margin-bottom: 300px;
+  margin-bottom: 300px;
 }
 
 #caixa {
-    margin: 0 auto;
-    margin-top: 150px; 
-    width: 60%
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 60%;
 }
-@media (max-width:900px) {
-    #caixa {
-        width: 80%;
-    }
+@media (max-width: 900px) {
+  #caixa {
+    width: 80%;
+  }
 }
 
 h4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color:white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
 }
 
-#movies img{
-    width: 80%;
+#movies img {
+  width: 80%;
 }
 
-#movies .col-md-3 .well{
-    height: auto;
-    margin-bottom: 20px;
+#movies .col-md-3 .well {
+  height: auto;
+  margin-bottom: 20px;
 }
 
-#movies .col-md-3 img{
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 350px;
-    transition: .5s ease;
-    backface-visibility: hidden;
+#movies .col-md-3 img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 350px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
 
 #btnMovies {
-    margin-bottom: 20px;
-    margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0e1b2b #171717;
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0e1b2b;
+  border-radius: 10px;
+  border: 1px outset #ffffff;
 }
