@@ -57,7 +57,7 @@
             <div class="text-secondary px-4 py-5 text-center" id="caixa">
                 <div class="py-5">
                     <h1 class="display-5 fw-bold text-white">Cadastre-se já</h1>
-                    <p class="col-lg-6 mx-auto fw-bold text-white">Aproveite todo o conteudo exclusivo da
+                    <p class="col-lg-6 mx-auto fw-bold text-white">Aproveite todo o conteudo da
                         Resiliaflix e curta os melhores filmes de
                         terror de todos os tempos.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -82,7 +82,7 @@
             <div class="col-12">
                 <ul class="filme_lista">
                     <li class="filme" id="movie" onclick="apiFilme('halloween')">
-                        <img class="img-fluid" src="./img/movies/1_halloween.jpg"/>
+                        <img class="img-fluid" src="./img/movies/1_halloween.jpg" />
                         <div class="filme_info">
                             <div class="col-12" >
                                 <a class="btn-custom-round btn btn-light rounded-circle">
@@ -221,7 +221,7 @@
         </section>
     </div>
     <div id="infoOmdb">
-        <div id="poster">   
+        <div id="poster">
         </div>
         <div id="infoContainer">
             <h2 id="titulo"></h2>
@@ -232,7 +232,34 @@
             <h4 id="sinopse"></h4>
             <div id="btnPesquisa">
             </div>
-        </div> 
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" style="color: white;">Conheça mais</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <img src="./img/oquesomos2.png"  width="281" height="500">
+                    </div>
+            </div>
+
+            <div class="col">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <img src="./img/maratona.png" width="281" height="500">
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <img src="./img/assista2.png" width="281" height="500">
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -259,13 +286,16 @@
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="http://www.twitter.com"><svg class="bi" width="24" height="24">
+                <li class="ms-3"><a class="text-muted" href="http://www.twitter.com"><svg class="bi" width="24"
+                            height="24">
                             <use xlink:href="#twitter" />
                         </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="http://www.instagram.com"><svg class="bi" width="24" height="24">
+                <li class="ms-3"><a class="text-muted" href="http://www.instagram.com"><svg class="bi" width="24"
+                            height="24">
                             <use xlink:href="#instagram" />
                         </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="http://www.facebook.com"><svg class="bi" width="24" height="24">
+                <li class="ms-3"><a class="text-muted" href="http://www.facebook.com"><svg class="bi" width="24"
+                            height="24">
                             <use xlink:href="#facebook" />
                         </svg></a></li>
             </ul>
@@ -275,8 +305,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 
 </html>
